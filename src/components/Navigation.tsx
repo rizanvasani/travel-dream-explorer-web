@@ -29,7 +29,7 @@ const Navigation = () => {
             <div className="w-8 h-8 bg-gradient-travel rounded-lg flex items-center justify-center">
               <Calendar className="w-5 h-5 text-white" />
             </div>
-            <span className="font-display font-bold text-xl text-foreground">WanderWays</span>
+            <span className="font-display font-bold text-xl text-foreground">Wisdom Travel and Tours</span>
           </Link>
 
           {/* Desktop Navigation */}
@@ -38,7 +38,7 @@ const Navigation = () => {
               <Link
                 key={item.name}
                 to={item.path}
-                className={`text-sm font-medium transition-colors hover:text-primary ${
+                className={`text-sm font-bold transition-colors hover:text-primary ${
                   isActive(item.path)
                     ? 'text-primary border-b-2 border-primary pb-1'
                     : 'text-muted-foreground'
@@ -86,7 +86,7 @@ const Navigation = () => {
                 <Link
                   key={item.name}
                   to={item.path}
-                  className={`block px-3 py-2 text-base font-medium transition-colors ${
+                  className={`block px-3 py-2 text-base font-bold transition-colors ${
                     isActive(item.path)
                       ? 'text-primary bg-travel-50'
                       : 'text-muted-foreground hover:text-primary hover:bg-muted'
