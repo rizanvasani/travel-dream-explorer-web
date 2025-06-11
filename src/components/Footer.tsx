@@ -1,6 +1,6 @@
 
 import { Link } from 'react-router-dom';
-import { Calendar, Search, User } from 'lucide-react';
+import { Calendar, Phone, Mail, MapPin } from 'lucide-react';
 
 const Footer = () => {
   return (
@@ -9,14 +9,17 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           {/* Company Info */}
           <div className="space-y-4">
-            <div className="flex items-center space-x-2">
-              <div className="w-8 h-8 bg-gradient-travel rounded-lg flex items-center justify-center">
-                <Calendar className="w-5 h-5 text-white" />
+            <div className="flex items-center space-x-3">
+              <div className="w-10 h-10 gradient-hero rounded-lg flex items-center justify-center">
+                <Calendar className="w-6 h-6 text-white" />
               </div>
-              <span className="font-display font-bold text-xl">WanderWays</span>
+              <div>
+                <span className="font-display font-bold text-xl">Wisdom</span>
+                <span className="font-display font-normal text-lg text-slate-300 ml-1">Tours & Travels</span>
+              </div>
             </div>
             <p className="text-slate-300 text-sm leading-relaxed">
-              Your trusted travel companion for unforgettable journeys. We make travel planning seamless and exciting.
+              Your trusted travel companion for 15+ years. We create unforgettable journeys with professional service and competitive prices.
             </p>
             <div className="flex space-x-4">
               <div className="w-8 h-8 bg-slate-800 rounded-full flex items-center justify-center hover:bg-slate-700 transition-colors cursor-pointer">
@@ -36,21 +39,23 @@ const Footer = () => {
             <h3 className="font-semibold text-lg">Quick Links</h3>
             <ul className="space-y-2">
               <li><Link to="/about" className="text-slate-300 hover:text-white transition-colors text-sm">About Us</Link></li>
-              <li><Link to="/services" className="text-slate-300 hover:text-white transition-colors text-sm">Our Services</Link></li>
-              <li><Link to="/flights" className="text-slate-300 hover:text-white transition-colors text-sm">Flight Search</Link></li>
+              <li><Link to="/packages" className="text-slate-300 hover:text-white transition-colors text-sm">Tour Packages</Link></li>
+              <li><Link to="/flights" className="text-slate-300 hover:text-white transition-colors text-sm">Flight Bookings</Link></li>
+              <li><Link to="/visa" className="text-slate-300 hover:text-white transition-colors text-sm">Visa Services</Link></li>
               <li><Link to="/contact" className="text-slate-300 hover:text-white transition-colors text-sm">Contact Us</Link></li>
             </ul>
           </div>
 
           {/* Services */}
           <div className="space-y-4">
-            <h3 className="font-semibold text-lg">Services</h3>
+            <h3 className="font-semibold text-lg">Our Services</h3>
             <ul className="space-y-2">
+              <li><span className="text-slate-300 text-sm">International Packages</span></li>
+              <li><span className="text-slate-300 text-sm">Domestic Tours</span></li>
               <li><span className="text-slate-300 text-sm">Flight Bookings</span></li>
-              <li><span className="text-slate-300 text-sm">Hotel Packages</span></li>
-              <li><span className="text-slate-300 text-sm">Group Tours</span></li>
               <li><span className="text-slate-300 text-sm">Visa Assistance</span></li>
               <li><span className="text-slate-300 text-sm">Travel Insurance</span></li>
+              <li><span className="text-slate-300 text-sm">Hotel Bookings</span></li>
             </ul>
           </div>
 
@@ -58,17 +63,36 @@ const Footer = () => {
           <div className="space-y-4">
             <h3 className="font-semibold text-lg">Contact Info</h3>
             <div className="space-y-3">
-              <div>
-                <p className="text-slate-300 text-sm">Email</p>
-                <p className="text-white text-sm">info@wanderways.com</p>
+              <div className="flex items-center space-x-3">
+                <Mail className="w-4 h-4 text-slate-400" />
+                <div>
+                  <p className="text-white text-sm">info@wisdomtours.com</p>
+                </div>
               </div>
-              <div>
-                <p className="text-slate-300 text-sm">Phone</p>
-                <p className="text-white text-sm">+1 (555) 123-4567</p>
+              <div className="flex items-center space-x-3">
+                <Phone className="w-4 h-4 text-slate-400" />
+                <div>
+                  <p className="text-white text-sm">+91 98765 43210</p>
+                  <p className="text-slate-300 text-xs">24/7 Support</p>
+                </div>
               </div>
-              <div>
-                <p className="text-slate-300 text-sm">Address</p>
-                <p className="text-white text-sm">123 Travel Street<br />Adventure City, AC 12345</p>
+              <div className="flex items-start space-x-3">
+                <MapPin className="w-4 h-4 text-slate-400 mt-1" />
+                <div>
+                  <p className="text-white text-sm">123 Travel Street</p>
+                  <p className="text-slate-300 text-xs">Mumbai, Maharashtra 400001</p>
+                </div>
+              </div>
+              <div className="mt-4">
+                <a 
+                  href="https://wa.me/919876543210" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center px-4 py-2 bg-green-600 hover:bg-green-700 rounded-lg transition-colors text-sm"
+                >
+                  <Phone className="w-4 h-4 mr-2" />
+                  WhatsApp Us
+                </a>
               </div>
             </div>
           </div>
@@ -76,7 +100,7 @@ const Footer = () => {
 
         <div className="border-t border-slate-800 mt-8 pt-8 text-center">
           <p className="text-slate-400 text-sm">
-            © 2024 WanderWays Travel Agency. All rights reserved.
+            © 2024 Wisdom Tours & Travels. All rights reserved. | Licensed Travel Agency | IATA Certified
           </p>
         </div>
       </div>
