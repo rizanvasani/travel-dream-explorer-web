@@ -1,4 +1,3 @@
-
 import { useState } from 'react';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
@@ -6,7 +5,7 @@ import { Input } from '@/components/ui/input';
 import { Label } from '@/components/ui/label';
 import { Textarea } from '@/components/ui/textarea';
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@/components/ui/select';
-import { User, Search, Calendar, Airplane } from 'lucide-react';
+import { User, Search, Calendar, Plane } from 'lucide-react';
 import { toast } from 'sonner';
 
 const Contact = () => {
@@ -69,7 +68,7 @@ const Contact = () => {
       hours: 'Mon-Fri: 9AM-6PM EST'
     },
     {
-      icon: Airplane,
+      icon: Plane,
       title: 'Emergency Support',
       description: 'Travel emergencies and urgent help',
       contact: '+1 (555) 911-HELP',

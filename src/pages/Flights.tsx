@@ -1,11 +1,10 @@
-
 import { useState } from 'react';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Input } from '@/components/ui/input';
 import { Label } from '@/components/ui/label';
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@/components/ui/select';
-import { Calendar, Search, Airplane, User } from 'lucide-react';
+import { Calendar, Search, Plane, User } from 'lucide-react';
 import { toast } from 'sonner';
 
 const Flights = () => {
@@ -237,7 +236,7 @@ const Flights = () => {
                     <div className="lg:col-span-3">
                       <div className="flex items-center space-x-3">
                         <div className="w-10 h-10 bg-gradient-travel rounded-full flex items-center justify-center">
-                          <Airplane className="w-5 h-5 text-white" />
+                          <Plane className="w-5 h-5 text-white" />
                         </div>
                         <div>
                           <h3 className="font-semibold text-foreground">{flight.airline}</h3>
@@ -257,7 +256,7 @@ const Flights = () => {
                       <div className="flex items-center justify-center space-x-2">
                         <div className="w-2 h-2 bg-travel-500 rounded-full"></div>
                         <div className="w-8 border-t border-muted-foreground"></div>
-                        <Airplane className="w-4 h-4 text-travel-500" />
+                        <Plane className="w-4 h-4 text-travel-500" />
                         <div className="w-8 border-t border-muted-foreground"></div>
                         <div className="w-2 h-2 bg-travel-500 rounded-full"></div>
                       </div>

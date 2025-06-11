@@ -1,6 +1,5 @@
-
 import { Card, CardContent } from '@/components/ui/card';
-import { Calendar, User, Search, Airplane } from 'lucide-react';
+import { Calendar, User, Search, Plane } from 'lucide-react';
 
 const About = () => {
   const team = [
@@ -47,7 +46,7 @@ const About = () => {
       description: 'Consistent service delivery and support you can count on, wherever you are.'
     },
     {
-      icon: Airplane,
+      icon: Plane,
       title: 'Innovation',
       description: 'Continuously improving our services with the latest technology and industry insights.'
     }

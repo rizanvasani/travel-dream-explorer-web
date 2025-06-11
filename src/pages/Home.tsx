@@ -1,13 +1,12 @@
-
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
-import { Calendar, Search, User, Airplane } from 'lucide-react';
+import { Calendar, Search, User, Plane } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
 const Home = () => {
   const services = [
     {
-      icon: Airplane,
+      icon: Plane,
       title: 'Flight Bookings',
       description: 'Find and book the best flights at competitive prices with our advanced search technology.',
       features: ['Global airline partnerships', 'Real-time price comparison', '24/7 booking support']
